@@ -6,6 +6,7 @@ function setDigitToNumber(digit, number) {
         let seg = `${digit.id}${segmentCode[i]}`
         let elem = document.getElementById(`${seg}`)
         elem.style.backgroundColor = "var(--segmentOnColor)"
+        elem.style.boxShadow = "1px 1px 20px var(--segmentOnColor)"
         
     }  
 }
@@ -15,6 +16,7 @@ function clearDigit(digit) {
     for (let i = 0; i < 7; i++) {
         let seg = document.getElementById(`${digit.id}${codes[i]}`)
         seg.style.backgroundColor = "var(--segmentOffColor)"
+        seg.style.boxShadow = ""
     }
 }
 
