@@ -73,6 +73,7 @@ body {
 
 .segment {
     background-color: var(--segmentOffColor);
+    /* border-radius: 10%; */
 }
 
 .topmid {
