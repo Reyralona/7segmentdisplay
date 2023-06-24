@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    /* 80px X 10px */
+
+    --segmentWidth: 70px;
+    --segmentHeight: 15px;
+    --clockBackground: rgb(62, 3, 3);
+    --segmentOffColor: rgb(39, 6, 6);
+    --segmentOnColor: rgb(219, 17, 17);
+}
+
+body {
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    flex-flow: column wrap;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.digitalClock {
+    background-color: rgb(7, 7, 7);
+    width: 900px;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 10px;
+    justify-content: center;
+    box-shadow: 15px 15px 10px rgb(15, 15, 15);
+    outline: 2px solid rgb(19, 18, 18);
+    position: relative;
+}
+
+.digitSegments {
+    width: 130px;
+    height: fit-content;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: skew(-5deg);
+    z-index: 3;
+    
+}
+
+.digitalClock::before{
+    content: "";
+    position: absolute;
+    background-color: rgb(31, 6, 6);
+    width: 93%;
+    height: 60%;
+    border-radius: 10px;
+}
+
+.segment {
+    background-color: var(--segmentOffColor);
+}
+
+.topmid {
+    width: 100px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.bottommid {
+    width: 100px;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mid, .bottom {
+    align-items: baseline;
+    display: flex;
+}
+
+/* top */
+.A {
+    width: var(--segmentWidth);
+    height: var(--segmentHeight);
+
+}
+
+/* top mid */
+.B {
+    width: var(--segmentHeight);
+    height: var(--segmentWidth);
+}
+
+.F {
+    width: var(--segmentHeight);
+    height: var(--segmentWidth);
+}
+
+/* mid */
+.G {
+    width: var(--segmentWidth);
+    height: var(--segmentHeight);
+}
+
+/* bottom mid */
+.E {
+    width: var(--segmentHeight);
+    height: var(--segmentWidth);
+}
+
+.C {
+    width: var(--segmentHeight);
+    height: var(--segmentWidth);
+}
+
+/* bottom */
+.D {
+    width: var(--segmentWidth);
+    height: var(--segmentHeight);
+}
+
+.separator{
+    display: flex;
+    height: 48.5%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transform: skew(-5deg);
+    
+}
+.dot{
+    width: var(--segmentHeight);
+    height: var(--segmentHeight);
+    background-color: var(--segmentOnColor);
+    z-index: 1;
+}
