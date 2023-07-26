@@ -17,8 +17,8 @@
     /* --segmentOffColor: rgb(1, 18, 1); */
     /* --segmentOnColor: rgb(20, 216, 30); */
 
-     --clockBackground: rgb(1, 13, 13);
-    --segmentOffColor: rgb(1, 17, 18);
+     --clockBackground: rgb(7, 7, 7);
+    --segmentOffColor: rgb(0, 11, 12);
     --segmentOnColor: rgb(20, 177, 216); 
 
     /* --clockBackground: rgb(17, 17, 17);
@@ -27,7 +27,7 @@
 }
 
 body {
-    background-color: rgb(29, 29, 29);
+    background-color: rgb(7, 7, 7);
     display: flex;
     flex-flow: column wrap;
     width: 100vw;
@@ -45,8 +45,9 @@ body {
     align-items: center;
     border-radius: 10px;
     justify-content: center;
-    box-shadow: 15px 15px 10px rgb(15, 15, 15);
+    /* box-shadow: 15px 15px 10px rgb(15, 15, 15); */
     position: relative;
+    transform: scale(100%)
 }
 
 .digitSegments {

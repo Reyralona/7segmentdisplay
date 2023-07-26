@@ -18,7 +18,7 @@ function clearDigit(digit) {
         let seg = document.getElementById(`${digit.id}${codes[i]}`)
         seg.style.backgroundColor = "var(--segmentOffColor)"
         seg.style.boxShadow = ""
-        seg.style.zIndex = 0
+        seg.style.zIndex = -1
     }
 }
 
