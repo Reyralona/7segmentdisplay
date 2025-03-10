@@ -17,9 +17,9 @@
     /* --segmentOffColor: rgb(1, 18, 1); */
     /* --segmentOnColor: rgb(20, 216, 30); */
 
-     --clockBackground: rgb(7, 7, 7);
-    --segmentOffColor: rgb(0, 11, 12);
-    --segmentOnColor: rgb(20, 177, 216); 
+     --clockBackground: #191919;
+    --segmentOffColor: #0f0f0f;
+    --segmentOnColor: rgb(216, 69, 20); 
 
     /* --clockBackground: rgb(17, 17, 17);
     --segmentOffColor: rgb(19, 18, 18);
@@ -27,7 +27,7 @@
 }
 
 body {
-    background-color: rgb(7, 7, 7);
+    background-color: #191919;
     display: flex;
     flex-flow: column wrap;
     width: 100vw;
@@ -37,7 +37,7 @@ body {
 }
 
 .digitalClock {
-    background-color: rgb(7, 7, 7);
+    background-color: #191919;
     width: 900px;
     height: 350px;
     display: flex;
